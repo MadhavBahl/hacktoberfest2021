@@ -1,6 +1,6 @@
 <h1 align='center'>
     👋 Beginner's guide to Git, GitHub, and Open Source 👋
-</h1>1
+</h1>
 
 <p align='center'>
     This repo contains the presentation for my next series on open source
