@@ -1,0 +1,43 @@
+ul li {
+    font-size: 0.7em;
+}
+
+.six {
+    font-size: 0.6em !important;
+}
+
+.six li {
+    font-size: 0.6em;
+}
+
+.seven {
+    font-size: 0.7em !important;
+}
+
+.seven li {
+    font-size: 0.7em;
+}
+
+.eight {
+    font-size: 0.8em !important;
+}
+
+.eight li {
+    font-size: 0.8em;
+}
+
+.nine {
+    font-size: 0.9em !important;
+}
+
+.nine li {
+    font-size: 0.9em;
+}
+
+#code {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; 
+}
+
+.left {
+    text-align: left;
+}
