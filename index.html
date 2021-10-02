@@ -1,0 +1,580 @@
+    <!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="An Introductory Presentation On Open Source">
+		<meta name="author" content="Madhav Bahl">
+		<title>Beginners guide to git, GitHub, and Open Source</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> -->
+
+        <!-- Optional theme -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+        <!-- <link rel="stylesheet" href="./../dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/beige.css" id="theme"> -->
+        
+<link rel="stylesheet" href="./dist/reset.css">
+<link rel="stylesheet" href="./dist/reveal.css">
+<link rel="stylesheet" href="./dist/theme/beige.css" id="theme">
+
+<!-- Theme used for syntax highlighted code -->
+<link rel="stylesheet" href="./plugin/highlight/monokai.css" id="highlight-theme">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <style>
+            .tlp {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                z-index: 999;
+            }
+            .ht {
+                position: fixed;
+                top: 25px;
+                right: 25px;
+                z-index: 999;
+            }
+        </style>
+	</head>
+	<body>
+        <a href="https://github.com/MadhavBahl/slides/" target="_blank" class="ht" aria-label="TheLeanProgrammer"><img
+                style="height: 50px;" src="./img/ht.svg" alt="TheLeanProgrammer"></a>
+        <a href="https://github.com/MadhavBahl/slides/" target="_blank" class="tlp" aria-label="TheLeanProgrammer"><img
+                style="height: 100px;" src="./pattern_sq.png" alt="TheLeanProgrammer"></a>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                    <h1>Hacktoberfest 2021</h1>
+                    <p>Beginners guide to Git, GitHub and Open Source</p>
+                    <div class="row">
+                        <br>
+                        <a style="padding: 20px;" target="_blank" href="https://github.com/MadhavBahlMD"><i class="fab fa-github"></i></a>
+                        <a style="padding: 20px;" target="_blank" href="https://www.linkedin.com/in/madhavbahl/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a style="padding: 20px;" target="_blank" href="https://www.instagram.com/theleanprogrammer/"><i class="fab fa-instagram"></i></a>
+                        <a style="padding: 20px;" target="_blank" href="http://madhavbahl.tech"><i class="fas fa-globe"></i></a>
+                        <a style="padding: 20px;" target="_blank" href="https://medium.com/@madhavbahl10"><i class="fab fa-medium"></i></a>
+                    </div>
+                    <br>
+                    <p style="font-size: 0.7em;"><b><a target="_blank" href="https://medium.com/hackernoon/kickoff-to-open-source-e6928cf0037b">Kickoff-To-Open-Source</a></b></p>
+                    <p style="font-size: 0.7em;">Find this presentation at: <a href="http://madhavbahl.tech/hacktoberfest2021/">http://madhavbahl.tech/hacktoberfest2021/</a></p>
+                    <p style="font-size: 0.7em;">Use Arrow Keys To Control this Presentation</p>
+                </section>
+				
+				<section id="whyOpen">
+                    <section>
+                        <h1>What do you mean by open source? 🌎</h1>
+                    </section>
+                    <section>
+                        <h3>Open Source is ❤</h3>
+                        <p>Open-source software is a type of computer software in which source code is released under a license in which the copyright holder grants users the rights to study, change, and distribute the software to anyone and for any purpose. </p>
+                    </section>
+                    <section>
+                        <p class="seven">We all know that one can not directly earn from Open source Software, or can we!?</p>
+                        <h1>Then Why do we actually care about open source? 😮</h1>
+                        
+                    </section>
+                    <section>
+                            <h2>Open Source, But Why?</h2>
+
+                            <p style="font-size: 0.95em;">Open source is in your best interest, whether you're an individual, an organisation, a small business, or a non-profit etc.</p>
+                            <p >
+
+                                <ul style="font-size: 0.85em;">
+                                    <li>People from all over the world can contribute to your code</li>
+                                    <li>Code quality is best maintained</li>
+                                    <li>Reduces duplication of effort</li>
+                                    <li>Showcase your talent and competence</li>
+                                    <li>Lift the community (Always remember, "we rise by lifting others")</li>
+                                </ul>
+                            </p>
+                    </section>
+                    <section>
+                        <p class="eight">You can earn from Open Source as well!</p>
+                        <ul>
+                            <li>Donations</li>
+                            <li>GitHub Sponsors</li>
+                            <li>Paid programs like GSoC</li>
+                            <li>Promotions</li>
+                            <li>Licensing</li>
+                            <li>Paid support</li>
+                        </ul>
+                    </section>
+                    <section>
+                            <!-- <p>Yeah, many people have many misconceptions about open source.</p> -->
+                        <h4>By Open Source I mean...</h4>
+
+                        <p class="seven"> (In Simple Words) Yes, each and every project you can find on GitHub (of course which is not private) is an open source project</p>
+
+                        <p class="seven"> <b>Therefore,</b> to make contribution, you just need to find a project that suits you, and an issue to work upon. </p>
+                    </section>
+
+                    <section>
+                        <h3>Open Source Is <i class="fas fa-heart"></i></h3>
+                        <p style="font-size: 0.95em;">Yes, and I am happy spreading this feeling of love.  </p>
+                        <!-- <p></p> -->
+                        <p>
+
+                                <ul style="font-size: 0.85em;">
+                                    <li>More you contribute, more awareness and ideas you get!</li>
+                                    <li>Doing projects in collab with some super awesome people</li>
+                                    <li>Cant fix a bug!? Ask Help </li>
+                                    <li>Again, Lift the community, help others! (Always remember, "we rise by lifting others")</li>
+                                </ul>
+                            </p>
+                    </section>
+
+                    <section>
+                        <p>Don't forget about</p>
+                        <a href="https://education.github.com/pack" target="_blank" rel="noopener noreferrer"><h2>The Student Benefits</h2></a>
+                    </section>
+                </section>
+
+                <section id="GitHub">
+                    <section>
+                        <h1>Let's have a closer look at GitHub 🤓</h1>
+                    </section>
+                    <section>
+                        <h3>Let’s make an account</h3>
+                        <img src="./img/make.gif" alt="">
+                    </section>
+                    <section>
+                        <img height="650" src="./img/gh1.jpg" alt="">
+                    </section>
+                    <!-- <section>
+                        <h4>Have a look at this article for compllete details</h4>
+                        <p><a href="https://codeburst.io/git-good-part-a-e0d826286a2a">https://codeburst.io/git-good-part-a-e0d826286a2a</a></p>
+                        <img src="./img/meme1.png" alt="">
+                    </section> -->
+                    <section>
+                        <h3>Basics</h3>
+                        <p>
+                            <ul>
+                                <li>Personal Information + Bio</li>
+                                <li>Profile Readme</li>
+                                <li>Your Orgs</li>
+                                <li>Repositories</li>
+                                <li>Stars, Repos, Followers and Following</li>
+                                <li>Creating a repository</li>
+                                <li>Creating a gist</li>
+                            </ul>
+                        </p>
+                    </section>
+                </section>
+
+                <section id="vc">
+                    <section>
+                        <h1>What is a version control?</h1>
+                    </section>
+                    <section>
+                        <h3>Version Control</h3>
+                        <p>
+                            <ul>
+                                <li>Version control systems are a category of software tools that help a software team manage changes to source code over time.</li>
+                                <li>Version control software keeps track of every modification to the code in a special kind of database.</li>
+                                <li>If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.</li>
+                            </ul>
+                        </p>
+                    </section>
+                    <section>
+                        <h1>What if there was no version control? 😧</h1>
+                    </section>
+                    <section>
+                        <img src="./img/novc.gif" height="500" alt="">
+                    </section>
+                    <section>
+                        <h3>Learn more here: <a href="https://www.atlassian.com/git/tutorials/what-is-version-control">Version Control</a></h3>
+                    </section>
+                </section>
+
+                <!-- <section id="prereq">
+                    <section>
+                        <h2>Prerequisite Knowledge?</h2>
+
+                        <p>Just Git And GitHub</p>
+                    </section>
+
+                    <section>
+                        <h4>New To This! Dont Worry :)</h4>
+                        <p>We Got You covered :)</p>
+                    </section>
+                    <section>
+                        <h4>First Let's Get To Know What GIT and GitHub Are?</h4>
+                        <p class="eight">Read These Two Articles in Your Free Time To Get A Good Knowledge About Usage Of Git and GitHub!</p>
+                        
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 ">
+                                <a target="_blank" href="https://codeburst.io/git-good-part-a-e0d826286a2a"> <img class="img-fluid" height="300px" src="https://user-images.githubusercontent.com/26179770/42127371-1ce5661c-7cb5-11e8-83fb-0debc4d01861.png" alt="" srcset=""> </a>
+                                <a class="eight" target="_blank" href="https://codeburst.io/git-good-part-a-e0d826286a2a"> Git Good Part-A</a>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6">
+                                <a target="_blank" href="https://codeburst.io/git-good-a-practical-introduction-to-git-and-github-in-git-we-trust-f18fa263ec48"> <img height="300px" class="img-fluid" src="https://user-images.githubusercontent.com/26179770/42127400-b058c420-7cb5-11e8-9e52-1446bf27cc10.png" alt="" srcset=""> </a>
+                                <a class="eight" target="_blank" href="https://codeburst.io/git-good-a-practical-introduction-to-git-and-github-in-git-we-trust-f18fa263ec48"> Git Good Part-B</a>
+                            </div>
+                        </div>
+
+                        <p class="seven"><b>P.S. It is GitHub not Github :P</b></p>
+                    </section>
+                    <section>
+                        <h3>Crash Course On Git Commands</h3>
+                        <p class="eight">After reading those 2 articles, watch this video and you will get a very nice idea on how to use Git and GitHub!</p>
+
+                        <iframe width="660" height="415" src="https://www.youtube.com/embed/SWYqp7iY_Tc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </section>
+                </section> -->
+
+                <section id="GitLook">
+                    <section>
+                        <h1>What is Git?</h1>
+                    </section>
+                    <section>
+                        <h2>Git</h2>
+
+                        <p>GIT is the most widely used VCS and is considered to be the best friend of any developer today. </p>
+
+                    </section>
+                    <section>
+                        <h1>Git vs GitHub?</h1>
+                    </section>
+                    <section>
+                        <p>Some people think Git = GitHub</p>
+                        <h2>Sorry boi, you wrong here! 🤷‍♂️</h2>
+                        <p>GIT is a version control system, or basically a tool to manage your code history, while GitHub is a hosting service for GIT repositories. Clearly, they are not the same things. 
+                               <br> In short, GIT is a tool, and GitHub is a service for projects that use GIT</p>
+                    </section>
+                    <section>
+                        <img src="./img/gitmeme.jpg" height="600" alt="">
+                    </section>
+                    <section>
+                        <h2>Little working..</h2>
+                        <p class="nine">
+                            <ul class="nine">
+                                <li>Git thinks of its data more like a series of snapshots of a miniature filesystem.</li>
+                                <li>With Git, every time you commit, or save the state of your project, Git basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. </li>
+                                <li>To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored</li>
+                            </ul>
+                        </p>
+                    </section>
+                    <section>
+                        <p><b>Git thinks about its data more like a stream of snapshots.</b></p>
+                        <img src="./img/gitconcept.png" height="500" alt="">
+                    </section>
+                    <section>
+                        <h3>Some cool terms 😎</h3>
+                        <p class="eight">
+                            <ol class="eight">
+                                <li><b>Snapshot:</b> It records all your files at a given point of time so that you can look up at them anytime later.</li>
+                                <li><b>Commit:</b> The act of creating a snapshot is called a commit. One is advised to commit his code whenever there are significant changes made.</li>
+                                <li><b>Repository:</b> The location or digital storage where all your files are stored</li>
+                                <li><b>Head: </b> The reference to the most recent commit is called Head</li>
+                                <li><b>Branches: </b>All commits live on some branch and there can be many branches in a single project repository.</li>
+                            </ol>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Concept of branches 🌳</h2>
+                        <img src="./img/branch.png" height="500" alt="">
+                    </section>
+                    <section>
+                        <h2>Easy to understand</h2>
+                        <img src="./img/easybranch.png" height="400" alt="">
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>1..2..3</h1>
+                        <h1>git!</h1>
+                    </section>
+                    <section>
+                        <h3>1. Downloading Git</h3>
+                        <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">https://git-scm.com/</a>
+                    </section>
+                    <section>
+                        <h3>2. Configuring Git</h3>
+                        <pre><code data-trim data-noescape>
+                        $ git config --global user.name "[name]"
+                        $ git config --global user.email "[email address]"
+                          </code></pre>
+                    </section>
+                    <section>
+                        <h3>Basic Git Commands</h3>
+                        <pre><code data-trim data-noescape>
+                            $ git clone [source]
+                            $ git init
+                            $ git remote add origin [source]
+                            $ git add .
+                            $ git commit -m "message"
+                            $ git push [-u &lt;remote&gt; &lt;branch&gt;]
+                            $ git branch
+                            $ git checkout -b newBranch
+                            $ git checkout oldBranch
+                            $ git <a href="https://www.atlassian.com/git/tutorials/saving-changes/git-stash" target="_blank" rel="noopener noreferrer">stash</a>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <p>But remember...</p>
+                        <h3>You don't need to commit everything!</h3>
+                        <p>You can <code>.gitignore</code> a few things!</p>
+                    </section>
+                </section>
+
+                <section id="open" >
+                    <section>
+                        <h2>Open Source contribution</h2>
+                        <h3>In 6 Easy Steps</h3>
+
+                        <p><b>Make Your First Open Source Contribution</b></p>
+                        <p><a href="https://github.com/Logic-Xcution/Kickoff-To-Open-Source">Your first open source contribution</a></p>
+                    </section>
+
+                    <section>
+                        <h2>Step 1: Find Your Project!</h2>
+                        <p class="eight">First step for starting open source is obviously, finding an open source project to contribute to! </p>
+                        <p style="font-size: 0.65em;">Either you can go for contributing the project os some open source organisation like fossasia etc.
+
+                                Or, you can find your projects/issues you want ot work on from these websites.</p>
+
+                        <p style="font-size: 0.6em;">
+
+                            <ul class="seven">
+                                <li><a href="http://issuehub.io/">http://issuehub.io/ -</a> A website which helps you find projects/issues based on your required language or issue labels.</li>
+                                <li><a href="https://www.codetriage.com/">Code Triage -</a> Another useful tool for searching issues</li>
+                                <li><a href="https://up-for-grabs.net/#/">Up For Grabs -</a> List of projects with issues that can be resolved by beginners</li>
+                                <li><a href="https://www.firsttimersonly.com/">First Timers Only -</a> A list of issues that are labelled "first-timers-only".</li>
+                                <li><a href="https://github.com/MunGell/awesome-for-beginners/">Awesome First Timers -</a> A list of awesome beginners-friendly projects.</li>
+                                
+                            </ul>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>How to find your org?</h2>
+                        <p>
+                            <ul>
+                                <li><a href="https://summerofcode.withgoogle.com/organizations/?sp-page=2"><b>GSoC Orgs 2020</b></a></li>
+                                <li><a href="https://summerofcode.withgoogle.com/archive/2019/organizations/"><b>GSoC Orgs 2019</b></a></li>
+                                <li><a href="https://summerofcode.withgoogle.com/archive/2018/organizations/"><b>GSoC Orgs 2018</b></a></li>
+                                <li><a href="https://summerofcode.withgoogle.com/archive/2017/organizations/"><b>GSoC Orgs 2017</b></a></li>
+                                <li><a href="https://summerofcode.withgoogle.com/archive/2016/organizations/"><b>GSoC Orgs 2016</b></a></li>
+                            </ul>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Step 2: Fork The Repo!</h2>
+                        <p class="eight">Fork the repo by clicking on the fork button on the top of the page. This will create a copy of the repository in your account.</p>
+                        <img width="700" height="480" src="img/fork2.png" alt="" srcset="">
+                    </section>
+
+                    <section>
+                        <h2>Step 3: Clone The Repo</h2>
+                        <!-- <p class="eight">Fork the repo by clicking on the fork button on the top of the page. This will create a copy of the repository in your account.</p> -->
+                        <img width="600" height="380" src="img/clone.gif" alt="" srcset="">
+
+                    </section>
+
+                    <section>
+                        <h2>Step 4: Make A New Branch For The Changes You Need To Make!</h2>
+                        <!-- <p class="eight">Fork the repo by clicking on the fork button on the top of the page. This will create a copy of the repository in your account.</p> -->
+                        
+
+                        <img width="600" height="380" src="img/checkout.gif" alt="" srcset="">
+
+                    </section>
+
+                    <section>
+                        <h2>Step 5: Make Changes and push the code!</h2>
+                        <!-- <p class="eight">Fork the repo by clicking on the fork button on the top of the page. This will create a copy of the repository in your account.</p> -->
+                        
+
+                        <img width="600" height="380" src="img/push.gif" alt="" srcset="">
+
+                    </section>
+
+                    <section>
+                        <h2>Step 6: Submit A Pull Request!</h2>
+                        <!-- <p class="eight">Fork the repo by clicking on the fork button on the top of the page. This will create a copy of the repository in your account.</p> -->
+                        
+
+                        <img width="600" height="380" src="img/PR.gif" alt="" srcset="">
+
+                    </section>
+                    
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Finding open source work</h1>
+                    </section>
+                    <section>
+                        <h2>Step 1: Find Your Project!</h2>
+                        <p class="eight">First step for starting open source is obviously, finding an open source project to contribute to!
+                        </p>
+                        <p style="font-size: 0.65em;">Either you can go for contributing the project os some open source organisation like
+                            fossasia etc.
+                    
+                            Or, you can find your projects/issues you want ot work on from these websites.</p>
+                    
+                        <!-- <p style="font-size: 0.6em;">
+                    
+                        <ul class="seven">
+                            <li><a href="http://issuehub.io/">http://issuehub.io/ -</a> A website which helps you find projects/issues based
+                                on your required language or issue labels.</li>
+                            <li><a href="https://www.codetriage.com/">Code Triage -</a> Another useful tool for searching issues</li>
+                            <li><a href="https://up-for-grabs.net/#/">Up For Grabs -</a> List of projects with issues that can be resolved
+                                by beginners</li>
+                            <li><a href="https://www.firsttimersonly.com/">First Timers Only -</a> A list of issues that are labelled
+                                "first-timers-only".</li>
+                            <li><a href="https://github.com/MunGell/awesome-for-beginners/">Awesome First Timers -</a> A list of awesome
+                                beginners-friendly projects.</li>
+                    
+                        </ul>
+                        </p> -->
+                    </section>
+                    <section>
+                        <h2>1. Issue Hub</h2>
+                        <p>A website which helps you find projects/issues based on your required language or issue labels.</p>
+                        <a href="http://issuehub.io/" target="_blank">http://issuehub.io/</a>
+                    </section>
+                    <section>
+                        <h2>2. Code Triage</h2>
+                        <p>Another useful tool for searching issues and projects</p>
+                        <a href="https://www.codetriage.com/" target="_blank">https://www.codetriage.com/</a>
+                    </section>
+                    <section>
+                        <h2>3. Up for grabs</h2>
+                        <p>List of projects with issues that can be resolved by beginners</p>
+                        <a href="https://up-for-grabs.net/#/" target="_blank">https://up-for-grabs.net/</a>
+                    </section>
+                    <section>
+                        <h2>4. Contrib</h2>
+                        <p>Good list of issues and repositories</p>
+                        <a href="https://gauger.io/contrib/" target="_blank">https://gauger.io/contrib/</a>
+                    </section>
+                    <section>
+                        <h2>5. First Timers Only</h2>
+                        <p>A list of issues that are labelled "first-timers-only"</p>
+                        <a href="https://www.firsttimersonly.com/" target="_blank">https://www.firsttimersonly.com/</a>
+                    </section>
+                    <section>
+                        <h2>6. Awesome First Timers</h2>
+                        <p>A list of awesome beginners-friendly projects</p>
+                        <a href="https://github.com/MunGell/awesome-for-beginners"
+                            target="_blank">https://github.com/MunGell/awesome-for-beginners</a>
+                    </section>
+                    <section>
+                        <h2>7. Pull Request Roulette</h2>
+                        <p>List of PRs that needs to be reviewed</p>
+                        <a href="http://www.pullrequestroulette.com/" target="_blank">http://www.pullrequestroulette.com/</a>
+                    </section>
+                    <section>
+                        <h2>8. GitHub Search</h2>
+                        <p>Yes, let's search it ourselves ;)</p>
+                        <a href="http://github.com/search" target="_blank">http://github.com/search</a>
+                    </section>
+                    <section>
+                        <h2>How to find your org?</h2>
+                        <p>
+                        <ul>
+                            <li><a href="https://summerofcode.withgoogle.com/organizations/?sp-page=2"><b>GSoC Orgs 2021</b></a></li>
+                            <li><a href="https://summerofcode.withgoogle.com/archive/2020/organizations/"><b>GSoC Orgs 2020</b></a></li>
+                            <li><a href="https://summerofcode.withgoogle.com/archive/2019/organizations/"><b>GSoC Orgs 2019</b></a></li>
+                            <li><a href="https://summerofcode.withgoogle.com/archive/2018/organizations/"><b>GSoC Orgs 2018</b></a></li>
+                            <li><a href="https://summerofcode.withgoogle.com/archive/2017/organizations/"><b>GSoC Orgs 2017</b></a></li>
+                            <li><a href="https://summerofcode.withgoogle.com/archive/2016/organizations/"><b>GSoC Orgs 2016</b></a></li>
+                        </ul>
+                        </p>
+                    </section>
+                    <section>
+                        <p>Another fantastic resource -</p>
+                        <a href="https://github.com/vinitshahdeo/Hacktoberfest2021" target="_blank" rel="noopener noreferrer">Hacktoberfest community by Vinit Shahdeo</a>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>ethics of hacktoberfest</h1>
+                    </section>
+                    <section>
+                        <a href="https://hacktoberfest.digitalocean.com/resources#values" target="_blank" rel="noopener noreferrer"><h3>Values</h3></a>
+                        <br>
+                        <ol>
+                            <li>Everyone is welcome</li>
+                            <li>Quantity is fun, quality is key</li>
+                            <li>Short-term action, long-term impact</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <a href="https://hacktoberfest.digitalocean.com/resources/qualitystandards" target="_blank" rel="noopener noreferrer"><h3>Examples of low-quality contributions</h3></a>
+                        <br>
+                        <ol style="font-size: 32px;">
+                            <li>Pull requests that are automated e.g. scripted opening pull requests to remove whitespace / fix typos / optimize images.</li>
+                            <li>Pull requests that are disruptive e.g. taking someone else's branch/commits and making a pull request.</li>
+                            <li>Pull requests that are regarded by a project maintainer as a hindrance vs. helping.</li>
+                            <li>Something that's clearly an attempt to simply +1 your pull request count for October.\</li>
+                            <li>Last but not least, one pull request to fix a typo is fine, but 5 pull requests to remove a stray whitespace is not.</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <a href="https://hacktoberfest.digitalocean.com/" target="_blank" rel="noopener noreferrer"><h1>Rules!</h1></a>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Good Luck Champ!</h2>
+                    <h4>The World Of Open Source Awaits You!</h4>
+
+                    <p>To View This Presentation, Visit: <a href="http://madhavbahl.tech/hacktoberfest2021">http://madhavbahl.tech/hacktoberfest2021</a></p>
+                </section>
+
+                <section id="articles">
+                    <section>
+                        <h2>Here are some awesome articles for you 😃</h2>
+                        <p>
+                            <ul>
+                                <li><a href="https://codeburst.io/git-good-part-a-e0d826286a2a">Git Good: Part A</a></li>
+                                <li><a href="https://codeburst.io/git-good-a-practical-introduction-to-git-and-github-in-git-we-trust-f18fa263ec48">Git Good: PArt B</a></li>
+                                <li><a href="https://hackernoon.com/kickoff-to-open-source-e6928cf0037b">KickOff to Open Source</a></li>
+                                <li><a href="https://www.atlassian.com/git/tutorials/what-is-version-control">What is Version Control?</a></li>
+                                <li><a href="https://www.atlassian.com/git/tutorials/what-is-git">What is Git</a></li>
+                            </ul>
+                        </p>
+                    </section>
+                    <section>
+                            <iframe width="1120" height="630" src="https://www.youtube.com/embed/SWYqp7iY_Tc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                </section>
+
+                <section id="thanks">
+                    <h1>Thank You!</h1>
+                </section>
+
+			</div>
+		</div>
+
+
+        <script src="./dist/reveal.js"></script>
+        <script src="./plugin/notes/notes.js"></script>
+        <script src="./plugin/markdown/markdown.js"></script>
+        <script src="./plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [RevealHighlight, RevealNotes]
+            });
+        </script>
+	</body>
+</html>
